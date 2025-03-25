@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Elom</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #F9F9F9; /* Couleur de fond subtile */
+        }
+
+        header {
+            background: #3C3C3C; /* Couleur d'en-tête ajustée */
+            color: #FFFFFF;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header ul li {
+            margin: 0 1rem;
+        }
+
+        header ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            text-align: center;
+            background-color: #FFFFFF; /* Fond blanc pour contraster */
+            padding: 2rem; /* Ajout d'espace intérieur */
+            border-radius: 8px; /* Légèrement arrondi */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet professionnel */
+        }
+
+        /* Ajout d'un espacement entre Accueil et À propos */
+        #accueil {
+            margin-bottom: 4rem; /* Double espace */
+        }
+
+        img.circular-photo {
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #3C3C3C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+
+        .skills, .project {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project, .skill-category {
+            border: 1px solid #DDDDDD;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            word-wrap: break-word; /* Empêche les mots longs de dépasser */
+        }
+
+        /* Formulaire */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #DDDDDD;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header ul {
+                flex-direction: column;
+            }
+
+            .skills, .project {
+                flex-direction: column;
+            }
+
+            .section {
+                margin-bottom: 1.5rem; /* Réduit l'espace pour petits écrans */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><strong><span class="nom">AGBANYO</span> <span class="prenom">Kofi Elom</span></strong></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="section">
+            <img src="/im1.jpg" alt="Photo d'accueil" class="circular-photo" />
+            <h2>Je suis <span style="color: aqua;">Elom</span></h2>
+            <p>Développeur en devenir passionné par le web et le design !</p>
+            <button><a href="#projets">Voir mes projets</a></button>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="apropos" class="section">
+            <img src="/im.jpg" alt="Photo à propos de moi" class="circular-photo" />
+            <h2>À propos</h2>
+            <p>
+                Je m'appelle <span style="color: black;">AGBANYO</span> <span style="color: aqua;">Kofi Elom</span>, passionné par la création de sites web modernes et interactifs.
+            </p>
+            <p>
+                Je suis actuellement étudiant(e) en développement web, et je cherche à améliorer mes compétences en <span style="color: aqua;">JavaScript</span>, <span style="color: aqua;">HTML</span> et <span style="color: aqua;">CSS</span>.
+            </p>
+            <p>
+                J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.
+            </p>
+            <button>Télécharger mon CV</button>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets" class="section">
+            <h2>Mes Projets</h2>
+            <div class="project">
+                <!-- Projet 1 -->
+                <div>
+                    <h3>Projet 1</h3>
+                    <p>Voici une brève description du projet 1.</p>
+                    <p>Ce Projet consiste à prendre une date sous la forme "JJ-MM-AAAA" et calculer la différence en jours entre la date actuelle et la date saisie.</p>
+                    <button><a href="projet1.html" target="_blank">Voir</a></button>
+                </div>
+                <!-- Projet 2 -->
+                <div>
+                    <h3>Projet 2</h3>
+                    <p>Voici une description du projet 2.</p>
+                    <p>Ce projet traite les nombres en entrée : calcule leur racine carrée, prend une phrase et affiche le nombre de mots ainsi que les trois premières lettres.</p>
+                    <button><a href="projet2.html" target="_blank">Voir</a></button>
+                </div>
+                <!-- Projet 3 -->
+                <div>
+                    <h3>Projet 3</h3>
+                    <p>Voici la description du projet 3.</p>
+                    <p>Le projet consiste à calculer le paiement mensuel d’un prêt en fonction des valeurs saisies et afficher le paiement résultant dans une balise.</p>
+                    <button><a href="projet3.html" target="_blank">Voir</a></button>
+                </div>
+            </div>
+        </section>
+        <!-- Section Compétences -->
+        <section id="competences" class="section">
+            <h2>Mes Compétences</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Gestion de projet<input type="range"></li>
+                        <li>Résolution de problème<input type="range"></li>
+                        <li>Adaptabilité<input type="range"></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>HTML<input type="range"></li>
+                        <li>CSS<input type="range"></li>
+                        <li>JavaScript<input type="range"></li>
+                        <li>VS Code<input type="range"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <form>
+                <label for="prenom">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" placeholder="Kofi Elom" required>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="AGBANYO" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="elomagbanyoc@gmail.com" required>
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" placeholder="+228-93-88-57-79" required>
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" placeholder="Sujet" required>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Écrivez votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by Elom with HTML, CSS, JS - © 2025</p>
+    </footer>
+</body>
+</html>
